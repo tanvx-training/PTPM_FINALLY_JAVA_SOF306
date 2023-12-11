@@ -1,0 +1,30 @@
+server:
+  port: 8080
+
+#spring:
+#  datasource:
+#    url: jdbc:sqlserver://localhost:1433;databaseName=PTPM_FINALLY_JAVA_SOF306
+#    username: username
+#    password: password
+#    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+#  jpa:
+#    show-sql: true
+#    hibernate:
+#      ddl-auto: update
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.SQLServerDialect
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:PTPM_FINALLY_JAVA_SOF306
+    username: sa
+    password: password
+    driverClassName: org.h2.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
